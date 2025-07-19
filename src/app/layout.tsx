@@ -15,11 +15,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Layouts & Experiments | Chetan Verma",
-  description: "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui. Explore modern web design patterns and interactive components.",
-  keywords: ["layouts", "UI experiments", "Next.js", "React", "TailwindCSS", "shadcn/ui", "open source", "web design"],
+  description:
+    "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui. Explore modern web design patterns and interactive components.",
+  keywords: [
+    "layouts",
+    "UI experiments",
+    "Next.js",
+    "React",
+    "TailwindCSS",
+    "shadcn/ui",
+    "open source",
+    "web design",
+  ],
   authors: [{ name: "Chetan Verma" }],
   creator: "Chetan Verma",
   publisher: "Chetan Verma",
+  icons: {
+    icon: "/favicon.ico",
+  },
   formatDetection: {
     email: false,
     address: false,
@@ -31,8 +44,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Layouts & Experiments | Chetan Verma",
-    description: "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui.",
+    description:
+      "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui.",
     url: "https://layouts.chetanverma.com",
+
     siteName: "Layouts & Experiments",
     images: [
       {
@@ -48,7 +63,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Layouts & Experiments | Chetan Verma",
-    description: "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui.",
+    description:
+      "Beautifully designed open-source layouts and UI experiments built with components from ui.chetanverma.com and shadcn/ui.",
     images: ["/og-image.png"],
     creator: "@chetanverma",
   },
