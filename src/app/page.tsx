@@ -1,8 +1,12 @@
 "use client";
 import { data } from "@/data";
 import VideoControls from "@/components/video-controls";
+import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter(); // Ensure you import useRouter from 'next/navigation'
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -26,6 +30,27 @@ export default function Home() {
             </div>
             <div className="bg-gray-50 border border-gray-100 rounded-xl p-2">
               <VideoControls src={item.video} width="100%" height="auto" />
+            </div>
+            <div className="flex items-end justify-end gap-x-2 w-full">
+              <Button
+                onClick={() => {
+                  window.open(item.src, "_blank");
+                }}
+                variant="link"
+                className="text-sm"
+              >
+                Live Demo <ArrowUpRight />
+              </Button>
+              <Button
+                onClick={() => {
+                  window.open(item.github, "_blank");
+                }}
+                variant="link"
+                className="text-sm"
+                disabled={!item.github} // Disable if no GitHub link
+              >
+                Github <ArrowUpRight />
+              </Button>
             </div>
           </div>
         ))}
