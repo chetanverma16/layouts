@@ -40,6 +40,7 @@ const VideoControls: React.FC<VideoControlsProps> = ({
       style={{ width, height, position: "relative", cursor: "pointer" }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      className="relative rounded-lg shadow-sm overflow-hidden"
     >
       {!isError ? (
         <video
@@ -52,7 +53,7 @@ const VideoControls: React.FC<VideoControlsProps> = ({
           style={{ display: "block", width: "100%", height: "100%" }}
           onError={handleError}
           muted
-          className="rounded-lg shadow-sm overflow-hidden object-cover"
+          className="rounded-xl shadow-sm overflow-hidden object-cover"
         />
       ) : (
         <img
