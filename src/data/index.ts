@@ -1,5 +1,19 @@
 export const data = [
   {
+    id: 4,
+    name: "Scheduleme.",
+    description:
+      "A scheduling application layout built with Next.js and TailwindCSS, providing a user-friendly interface for managing appointments, events, and reminders.",
+    src: "https://experiment-4.vercel.app",
+    media: {
+      type: "image",
+      src: "/images/experiment-4.webp",
+    },
+    github: "https://github.com/chetanverma16/experiment-4",
+    badge: "New",
+    techstack: ["Next.js", "TailwindCSS"],
+  },
+  {
     id: 3,
     name: "AiChat.",
     description:
@@ -10,7 +24,6 @@ export const data = [
       src: "/videos/experiment-3.webm",
     },
     github: "https://github.com/chetanverma16/experiment-3",
-    badge: "New",
     techstack: ["Next.js", "TailwindCSS"],
   },
   {
